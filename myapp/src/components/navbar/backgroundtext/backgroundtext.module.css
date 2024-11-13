@@ -1,0 +1,40 @@
+
+.okay {
+    position: absolute;  /* Position it absolutely over the overlay */
+    top: 30%;  /* Center it vertically */
+    left: 40%;  /* Center it horizontally */
+    transform: translate(-50%, -50%);  /* Adjust to center it precisely */
+    font-size: 1.2rem;  /* Adjust the font size if needed */
+    font-weight: bold;  /* Apply bold font */
+    color: white;  /* Set text color to white or any other color for contrast */
+    z-index: 10;  /* Ensure it comes above the overlay */
+}
+
+.okay span {
+    font-weight: thin;  /* If you want the span text to not be bold */
+}
+
+.okay {
+    position: absolute;
+    top: 23%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white;  
+    z-index: 10;  
+}
+
+.okay h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;  /* Adjust font size for the heading */
+    font-weight: bold;  /* Make the "Welcome!" text bold */
+}
+
+.okay p {
+    font-size: 0.8rem;  /* Adjust font size for the paragraph */
+    font-weight: 300;  /* Use a thinner font weight */
+}
+
+.okay span {
+    font-weight: 300;  /* If you want the span text to be thin */
+}

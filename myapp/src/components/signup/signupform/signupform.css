@@ -1,0 +1,179 @@
+/* Overlay style to place the form in front of other content */
+.signup-form-overlay {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Form container */
+  .signup-form-container {
+    width: 80%;
+    max-width: 300px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for social login buttons */
+  .social-login-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .social-btn {
+    padding: 5px;
+    width: 90px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .facebook-btn {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  .google-btn {
+    background-color: #db4437;
+    color: white;
+  }
+  
+  .apple-btn {
+    background-color: #000;
+    color: white;
+  }
+  
+  /* Styling for OR divider */
+  .or-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .or-divider hr {
+    width: 40%;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .or-divider span {
+    margin: 0 10px;
+    color: #777;
+    font-weight: bold;
+  }
+  
+  /* Styling for input fields */
+  .input-field {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  
+  /* Styling for Remember Me toggle button */
+  .remember-me-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .toggle-switch {
+    width: 35px;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .toggle-circle {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch.on {
+    background-color: #49a6e9;
+  }
+  
+  .toggle-circle.on {
+    left: 18px;
+  }
+  
+  .toggle-switch.off {
+    background-color: #ccc;
+  }
+  
+  .toggle-circle.off {
+    left: 2px;
+  }
+  
+  /* Styling for the Sign Up button */
+  .signup-btn {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color:#2D3748;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the Sign In link */
+  .signin-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signin-link a {
+    color: #49a6e9;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .signin-link a:hover {
+    text-decoration: underline;
+  }
+
+  .iconn{
+    display: flex;
+    gap:10px;
+    width: 20px; /* Set a specific width */
+    height: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+
+  
+  .iconn img{
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Border with 20% opacity */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    width: 60px; /* Set a specific width */
+    height: 60px; /* Set a specific height */
+    object-fit: contain; 
+
+  }
+  
+  

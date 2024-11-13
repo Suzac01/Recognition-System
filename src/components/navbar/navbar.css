@@ -1,0 +1,106 @@
+/* Styling for navbar */
+.navbar {
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px; /* Reduced padding for closer placement */
+    color: white;
+    z-index: 2;
+}
+
+/* Styling for logo */
+.logo {
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Styling for logo link */
+.logo-link {
+    text-decoration: none;
+    color: white; /* Default color for logo */
+}
+
+/* Styling for logo separator */
+.logo-separator {
+    margin: 0 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+/* Centering navigation items */
+.center-nav-items {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for nav items */
+.nav-items h3 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    transition: color 0.3s ease; /* Hover effect for text */
+}
+
+/* Styling for icons (no hover effect) */
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: none; /* Removed hover effect for icons */
+}
+
+/* Styling for nav item links */
+.nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect for navigation items text */
+.nav-item:hover h3 {
+    color: #ff6347; /* Change text color on hover */
+}
+
+/* Hover effect for logo */
+.logo-link:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+/* Styling for the download button */
+.download-btn-link {
+    text-decoration: none;
+}
+
+.download-btn {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin-left: 90px;
+    transition: background-color 0.3s, color 0.3s; /* Added transition */
+}
+
+/* Hover effect for download button */
+.download-btn:hover {
+    background-color: #ff6347; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border-color: #ff6347; /* Change border color on hover */
+}
+
