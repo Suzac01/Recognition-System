@@ -6,6 +6,12 @@ import Signupform from './signupform/signupform';
 import Backgroundtext from '../navbar/backgroundtext/backgroundtext';
 
 const Signup = () => {
+    const [formData, setFormData] = React.useState({
+        name:'',
+        email:'',
+        password:'',
+    })
+
     return (
         <>
             <div className="container-fluid">

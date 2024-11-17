@@ -10,14 +10,10 @@ import Dashboard from './components/dashboard/dashboard.jsx';
 function App() {
   return (
     <Router>
-
         <Dashboard/>
-      <Routes>  
-        
-
-        
-        {/* <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} /> */}
+      <Routes>
+          <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
 
       </Routes>
     </Router>
