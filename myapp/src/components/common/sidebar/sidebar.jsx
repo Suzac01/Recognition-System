@@ -17,24 +17,36 @@ const Sidebar = () => {
       <ul className={styles['nav-list']}>
         <li className={`${styles['nav-item']} ${isActive('/dashboard') ? styles['active'] : ''}`}>
           <Link to="/dashboard" className={styles['nav-link']}>
-            <FaTachometerAlt className={styles['nav-item-icon']} />
+            <FaTachometerAlt className={styles['nav-item-icon']}/>
             Dashboard
           </Link>
-        </li><br/>
+        </li>
+        <br/>
 
         <li className={`${styles['nav-item']} ${isActive('/signup') ? styles['active'] : ''}`}>
           <Link to="/signup" className={styles['nav-link']}>
-            <FaUserPlus className={styles['nav-item-icon']} />
+            <FaUserPlus className={styles['nav-item-icon']}/>
             Sign Up
           </Link>
-        </li><br/>
+        </li>
+        <br/>
 
         <li className={`${styles['nav-item']} ${isActive('/signin') ? styles['active'] : ''}`}>
           <Link to="/signin" className={styles['nav-link']}>
-            <FaSignInAlt className={styles['nav-item-icon']} />
+            <FaSignInAlt className={styles['nav-item-icon']}/>
             Users
           </Link>
         </li>
+        <br/>
+
+
+        <li className={`${styles['nav-item']} ${isActive('/signin') ? styles['active'] : ''}`}>
+          <Link to="/users" className={styles['nav-link']}>
+            <FaSignInAlt className={styles['nav-item-icon']}/>
+            Monitors
+          </Link>
+        </li>
+
       </ul>
     </div>
   );

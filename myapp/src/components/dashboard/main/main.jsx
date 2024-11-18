@@ -6,7 +6,6 @@ const Main = () => {
   const [users, setUsers] = useState([
     { id: 1, name: 'Alice', role: 'Programmer' },
     { id: 2, name: 'Bob', role: 'Developer' }
-    // Add more users as needed
   ]);
 
   const handleEdit = (id) => {

@@ -8,9 +8,8 @@ import Navbar from '../../components/common/navbar/navbar.jsx';
 const Dashboard = () => {
     return (
         <div className={styles['container-full']}>
-
                              <Navbar/>
-                            <Main/> 
+                            <Main/>
             <img src={dashimg} className={styles['background-image']} alt="Dashboard Background" />
 
             <div className={styles.overlay}></div>
