@@ -28,8 +28,8 @@ const Navbar = () => {
           <a href="/signup" className="nav-item">
             <h3><img src={ico} alt="Sign Up Icon" className="icon" /> Sign Up</h3>
           </a>
-          <a href="/signin" className="nav-item">
-            <h3><img src={signin} alt="Sign In Icon" className="icon" /> Sign In</h3>
+          <a href="/login" className="nav-item">
+            <h3><img src={signin} alt="Sign In Icon" className="icon" /> Login</h3>
           </a>
         </div>
       </div>

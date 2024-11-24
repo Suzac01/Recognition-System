@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './navbar.module.css';
-import icon from '../../../assets/icons/settings.png';
+import icon from '../../../assets/icons/bell.png';
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
           />  
         </div>
 
-        <div className={styles.navbarButton}>
+        <div className={styles.navbarIcon}>
           <img src={icon}/> 
         </div>
       </div>

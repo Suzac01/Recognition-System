@@ -164,8 +164,6 @@
     margin-bottom: 50px;
     margin-left: 20px;
   }
-
-  
   .iconn img{
     border: 1px solid rgba(0, 0, 0, 0.2); /* Border with 20% opacity */
     padding: 20px; /* Adjust padding as needed */
@@ -175,5 +173,70 @@
     object-fit: contain; 
 
   }
+/* Ensure the modal overlay takes up the full screen */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;           /* Make sure the modal appears above other content */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  overflow: hidden;
+}
+
+/* Center the modal dialog */
+.modal-dialog {
+  margin-top: 50%;
+  display: flex;
+  max-width: 500px; /* Optional: Limit modal width */
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;        /* Ensure no content leaks out */
+  padding: 0px;
+  text-align: center;
+}
+
+/* Add some padding and styling to the modal content */
+.modal-content {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh; /* Prevents modal content from exceeding screen height */
+  overflow-y: auto; /* Adds scroll if content overflows */
+
+}
+
+
+/* Styling for the modal header (close button) */
+.modal-header {
+  position: relative;
+}
+
+.modal-header .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 25px;
+  color: red;
+  border: none;
+  background: transparent;
+}
+
+/* Optional: add a transition effect to the modal */
+.modal.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
   
   

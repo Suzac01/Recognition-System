@@ -26,7 +26,7 @@
     align-items: center;
     gap: 10px; /* Space between each button */
   }
-  
+
   /* Navbar buttons */
   .navbarButton {
     background-color: transparent;
@@ -37,7 +37,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    
   }
   
   .navbarButton:hover {

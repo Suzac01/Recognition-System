@@ -16,7 +16,6 @@ const Login = () => {
         <div className={styles.overlay}></div>
         <div className={styles.content}>
             <Loginform/>
-            {/* Your login content here */}
 
         </div>
     </div>

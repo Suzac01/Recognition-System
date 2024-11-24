@@ -8,6 +8,7 @@ import Sidebar from './components/common/sidebar/sidebar.jsx';
 import Dashboard from './components/dashboard/dashboard.jsx';
 import Users from './components/users/users.jsx';
 
+
 function App() {
   return (
     <Router>
@@ -18,9 +19,6 @@ function App() {
             <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/users" element={<Users/>}/>
         </Routes>
-        {/*<Dashboard/>*/}
-        <Routes>
-      </Routes>
     </Router>
   );
 }
