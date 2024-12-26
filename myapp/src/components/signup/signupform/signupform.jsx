@@ -16,6 +16,7 @@ const SignupForm = () => {
 
   const HandleInputChange = (e) => {
     const {name, value} = e.target;
+    console.log(`Input Change Detected: ${name} = ${value}`);
     setsignupdata((prevData) => ({
       ...prevData, [name]: value,
     }));
@@ -84,7 +85,7 @@ const SignupForm = () => {
           </form>
 
           <div className="signin-link">
-            <p>Already have an account? <a href="/login">Sign In</a></p>
+            <p>Already have an account? <a href="/login">Login ?</a></p>
           </div>
         </div>
         {/* Modal for successful signup */}

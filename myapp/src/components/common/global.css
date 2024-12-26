@@ -1,0 +1,81 @@
+.table {
+    --bs-table-bg: none;
+    --bs-table-color: none;
+}
+.chart-container {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.chart-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    text-align: center;
+}
+
+.bar-value {
+    font-weight: bold;
+}
+
+.social-traffic-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.traffic-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.traffic-table table {
+    width: 100%;
+}
+.traffic-table th,
+.traffic-table td {
+    border: 1px solid #ccc;
+    padding: 1px;
+    font-size: 10px;
+    color: #a0aec0;
+    font-weight: 700;
+}
+.progress-group {
+    display: flex;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    width: 75%;
+    margin-top: 8px;
+}
+
+.progress {
+    height: 60%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+.view-btn {
+    background-color: #3182ce;
+    width: 60px;
+    height: 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 10px;
+}

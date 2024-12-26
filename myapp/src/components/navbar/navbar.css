@@ -104,3 +104,89 @@
     border-color: #ff6347; /* Change border color on hover */
 }
 
+.bell-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 200px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.notification-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-container:hover {
+    transform: scale(1.09);
+}
+
+.bell-icon {
+    font-size: 24px;
+    color: #ff9800;
+    transition: color 0.3s ease;
+}
+
+.notification-container:hover .bell-icon {
+    color: #ffb9ba;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 100%; /* Position it directly below the bell icon */
+    left: 85%; /* Horizontally center the dropdown */
+    transform: translateX(-50%); /* Offset it to center the dropdown */
+    background-color: #ffffff; /* Dark background for the dropdown */
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 200px;
+    z-index: 10; /* Make sure it's above other content */
+}
+
+/* Optional: Small arrow to point towards the bell icon */
+.notification-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px; /* Position the arrow just above the dropdown */
+    left: 50%; /* Center the arrow horizontally */
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #ffffff; /* Same color as the dropdown */
+}
+
+
+
+

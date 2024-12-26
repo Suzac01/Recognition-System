@@ -2,31 +2,171 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    background-color: #f7fafc;
     overflow: hidden;
 }
 
-.background-image{
+.background-image {
     width: 100%;
     background-color: rgba(49, 130, 206);
-
 }
 
-/* Semi-transparent overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Adjust color and opacity */
-    z-index: 0; /* Overlay appears above the image */
-}
-
-/* Sidebar positioned in the top-left corner */
 .sidebar {
     position: absolute;
     top: 20px;
     left: 20px;
-    z-index: 1; /* Sidebar appears on top */
-    color: white; /* For visibility on a dark background */
+    z-index: 1;
+    color: white;
+}
+
+/* General Card Styles */
+.datacard, .datacard1, .datacard2 {
+    position: absolute;
+    padding: 15px 0 0 20px;
+    background-color: white;
+    width: 270px;
+    border-radius: 16px;
+    height: 100px;
+    z-index: 999;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Individual Card Positions */
+.datacard {
+    top: 15%;
+    left: 17%;
+}
+
+.datacard1 {
+    top: 15%;
+    left: 36%;
+}
+
+.datacard2 {
+    top: 15%;
+    left: 55%;
+}
+
+.datacard:hover, .datacard1:hover, .datacard2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content Styles */
+.InfoCard {
+    color: #a0aec0;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0;
+}
+
+.InfoCardPrice {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Input and Button Styles */
+.inputField {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+    border-color: #3182ce;
+}
+
+.submitBtn {
+    border-radius: 8px;
+    background-color: #3182ce;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #2767a1;
+}
+
+/* Table Styles */
+.pagevisitstable {
+    position: absolute;
+    left: 17%;
+    bottom: 10px;
+    width: 50%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+    overflow: auto;
+    height: 210px;
+}
+
+.tableHead {
+    background-color: #f2f8f0;
+    font-size: 10px;
+    color: #a0aec0;
+}
+
+.tableBody {
+    color: #718096;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.viewAllBtn {
+    background-color: #3182ce;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
 }
